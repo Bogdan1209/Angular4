@@ -11,7 +11,6 @@ namespace Angular4.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-
             return View();
         }
     }

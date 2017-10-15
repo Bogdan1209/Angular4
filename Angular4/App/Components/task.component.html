@@ -1,0 +1,23 @@
+﻿<div class="detail" *ngIf="userTasks">
+    <h3 class="bg-danger">{{errorMessege}}</h3>
+    <h2>{{selectedUser.FirstName + " " + selectedUser.LastName}} tasks</h2>
+    <div *ngFor="let task of userTasks; let i = index">
+        <span class="glyphicon glyphicon-remove deleteBtn" (click)="deleteTask(task)"></span>
+        <ul>
+            Task {{i + 1}}
+            <li>
+                Task Name: {{task.TaskName}}
+            </li>
+            <li>
+                Description: {{task.Description}}
+            </li>
+            <li>
+                Start Time: {{task.StartTime | date:'yMdjm'}}
+            </li>
+            <li>
+                End Time: {{task.EndTime | date:'yMdjm'}}
+            </li>
+        </ul>
+       
+    </div>
+</div>
