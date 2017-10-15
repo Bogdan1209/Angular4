@@ -42,7 +42,7 @@ namespace Angular4.Controllers
 
         public IHttpActionResult GetCities()
         {
-            return Ok(data.users.Select(c => c.City).ToList());
+            return Ok(data.users.Select(c => c.City).Distinct().ToList());
         }
     }
 }

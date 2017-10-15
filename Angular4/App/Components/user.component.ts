@@ -24,7 +24,8 @@ export class UserComponent implements OnInit {
     }
     ngOnInit() {
         this.httpService.getUsers().subscribe((data: Response) => this.users = data.json(), err => this.errorMessege = "Oops,  data has not been loaded");
-        this.httpService.getCities().subscribe((data: Response) => this.cities = data.json(), err => this.errorMessege = "Oops,  data has not been loaded");
+        this.httpService.getCities().subscribe((data: Response) => this.cities = data.json(),
+            err => this.errorMessege = "Oops,  data has not been loaded");
        
     };
 

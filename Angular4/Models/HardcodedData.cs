@@ -12,7 +12,9 @@ namespace Angular4.Models
             new User { Id = 3, FirstName = "Usain", LastName = "Bolt", Address = "5 Argentina St.", City = "Sherwood", Number = new List<string>{"5550009874", "5551819286" } },
             new User { Id = 4, FirstName = "Jack", LastName = "London", Address = "33 Gold St.", City = "Klondike", Number = new List<string>{ "5555321346", "5559871236"}},
             new User { Id = 5, FirstName = "Mikhail", LastName = "Lermontov ", Address = "43 Poet's soul St.", City = "Moscow", Number = new List<string>{"5554327478"} },
-            new User { Id = 6, FirstName = "Test", LastName = "Bot", Address = "1337 This St.", City = "Test Town", Number = new List<string>{"5550000000"} }
+            new User { Id = 6, FirstName = "Test", LastName = "Bot", Address = "1337 This St.", City = "Test Town", Number = new List<string>{"5550000000"} },
+            new User { Id = 7, FirstName = "Test", LastName = "Bot", Address = "1337 This St.", City = "Test Town", Number = new List<string>{"5550000000"} },
+            new User { Id = 8, FirstName = "Test", LastName = "Bot", Address = "1337 This St.", City = "Test Town", Number = new List<string>{"5550000000"} }
         };
 
         //make static for data don't reset after reload a page
